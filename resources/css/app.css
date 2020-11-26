@@ -1,0 +1,149 @@
+body{
+    background:#fff;
+}
+
+.navbar-brand{
+    color: #16697a !important;
+    font-size: 38px;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    background:transparent;
+}
+
+h2{
+    color: #16697a !important;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.btn-lavue{
+    background: rgba(22, 105, 122, 20%);
+    border: 1px solid #16697a;
+    padding:6px 24px;
+    border-radius: 20px;
+    font-weight: bold;
+    text-decoration: none !important;
+    color: #16697a;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn-lavue.active{
+    background: rgba(22, 105, 122, 100%);
+    color: #F8F1F1;
+}
+
+.btn-lavue:hover{
+    background: rgba(22, 105, 122, 100%);
+    color: #F8F1F1;
+}
+
+.ic{
+    /* padding:60px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background: rgba(22, 105, 122, 20%);
+    max-height: 40px !important;
+}
+
+textarea,input,.custom-file-label{
+    overflow: hidden;
+    border-radius: 20px !important;
+}
+
+.centered{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item{
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+}
+
+.item:hover{
+    box-shadow: 0 4px 20px #16697a;
+    transform: scale(1.2);
+    z-index: 100;
+}
+
+.item:not(.main) img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    height: 350px;
+}
+
+.item.main img{
+    width: 100%;
+}
+
+.item .followers{
+    position: absolute;
+    top:0;
+    background: rgba(255, 166, 43, 20%);
+    color: #FFA62B;
+    filter: blur(20);
+    border:1px solid #FFA62B;
+    border-radius: 20px;
+    padding:6px 24px;
+    text-align: center;
+    margin: 24px;
+    backdrop-filter: blur(20px);
+}
+
+.item .followers h4{
+    font-weight: bold;
+    font-size: 18px;
+    margin:0;
+}
+
+.item .followers p{
+    font-size: 12px;
+    margin:0;
+}
+
+.item .detail{
+    position: absolute;
+    bottom:0;
+    background: rgba(248, 241, 241, 20%);
+    color: #F8F1F1;
+    backdrop-filter: blur(20px);
+    border:1px solid #F8F1F1;
+    border-radius: 20px;
+    padding:6px 24px;
+    text-align: center;
+    margin: 24px;
+}
+
+.item .detail h4{
+    font-weight: bold;
+    font-size: 18px;
+    margin:0;
+}
+
+.item .detail p{
+    font-size: 12px;
+    margin:0;
+}
+
+.item.main .detail h4{
+    font-weight: bold;
+    font-size: 24px;
+    margin:0;
+}
+
+.item.main .detail p{
+    font-size: 16px;
+    margin:0;
+}
