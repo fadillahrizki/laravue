@@ -2,13 +2,13 @@
     <div class="register">
 
             <div class="row pb-3">
-                <div class="col-12 m-auto text-center">
+                <div class="col-md-12 m-auto text-center">
                     <h2>Register Artist</h2>
                 </div>
             </div>
 
             <form class="row" @submit.prevent="handleRegist">
-                <div class="col-6 m-auto">
+                <div class="col-md-6 m-auto">
 
                     <div class="alert alert-success" role="alert" v-if="result && submitted">
                         New Artist has been Registered!
@@ -24,7 +24,7 @@
                             <img :src="ic_user" alt="User Icon">
                         </div>
 
-                        <div class="col-10">
+                        <div class="col-md-10">
                             <div class="row">
                                 <div class="col-6">
                                     <input type="text" v-model="artist.first_name" class="form-control" placeholder="First Name" required>

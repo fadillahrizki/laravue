@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="row pb-3">
-            <div class="col-12 m-auto text-center">
+            <div class="col-md-12 m-auto text-center">
                 <h2>Most Popular</h2>
             </div>
         </div>
@@ -15,13 +15,13 @@
         </div>
 
         <div class="row centered" v-else>
-            <div class="col-3">
+            <div class="col-md-3">
                 <Item :name="popular[1].fullname" :email="popular[1].email" :followers="popular[1].followers" :image="popular[1].image" />
             </div>
-            <div class="col-5">
+            <div class="col-md-5">
                 <Item :name="popular[0].fullname" :email="popular[0].email" :followers="popular[0].followers" :image="popular[0].image" :isMain="true" />
             </div>
-            <div class="col-3">
+            <div class="col-md-3">
                 <Item :name="popular[2].fullname" :email="popular[2].email" :followers="popular[2].followers" :image="popular[2].image" />
             </div>
         </div>
